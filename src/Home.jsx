@@ -29,6 +29,7 @@ import AirlineCard from "./components/AirlineCard";
 import BlogCard from "./components/BlogCard";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
+import Testimonial from "./components/Testimonial";
 const Home = () => {
   return (
     <div className="bg-[#E5E5E5]">
@@ -215,6 +216,7 @@ const Home = () => {
           />
         </div>
       </div>
+      <Testimonial />
       <div className="max-w-screen-xl mx-auto relative">
         <h2 className="pt-14 pb-10 text-3xl font-semibold">Travel Blog</h2>
         <div className="grid grid-cols-3 gap-x-5 gap-y-10">
