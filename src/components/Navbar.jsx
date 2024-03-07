@@ -1,14 +1,9 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/LOGO.png";
 const Navbar = () => {
   return (
     <div className="bg-nav-bg py-4 mx-6">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-5">
-          <img src={logo} alt="logo" />
-          <h3 className="text-[#FFB700] text-3xl font-bold">
-            Air<span className="text-[#006CE4] font-medium">Book</span>
-          </h3>
-        </div>
+        <img src={logo} alt="logo" />
         <div>
           <ul className="flex items-center gap-10 text-xl font-semibold">
             <li>Blog</li>

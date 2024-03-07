@@ -2,6 +2,8 @@ import Navbar from "./components/Navbar";
 import { BiRadioCircle } from "react-icons/bi";
 import { BiRadioCircleMarked } from "react-icons/bi";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardArrowLeft } from "react-icons/md";
+import { MdKeyboardArrowRight } from "react-icons/md";
 import { IoSearchSharp } from "react-icons/io5";
 import { VscCircleFilled } from "react-icons/vsc";
 import image1 from "./assets/image1.png";
@@ -213,7 +215,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto">
+      <div className="max-w-screen-xl mx-auto relative">
         <h2 className="pt-14 pb-10 text-3xl font-semibold">Travel Blog</h2>
         <div className="grid grid-cols-3 gap-x-5 gap-y-10">
           <BlogCard
@@ -243,9 +245,15 @@ const Home = () => {
             date={"10 Septembar 23"}
           />
         </div>
+        <div className="bg-[#FFB700] p-2 rounded-full absolute left-5 top-[40%]">
+          <MdKeyboardArrowLeft />
+        </div>
+        <div className="bg-[#FFB700] p-2 rounded-full absolute right-5 top-[40%]">
+          <MdKeyboardArrowRight />
+        </div>
       </div>
-      <Newsletter/>
-      <Footer/>
+      <Newsletter />
+      <Footer />
     </div>
   );
 };
