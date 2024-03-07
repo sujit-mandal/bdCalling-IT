@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily:{
+        Poppins: ["Poppins", "sans-serif"],
+      },
       colors: {
         // Define custom colors using RGBA
         "blue-start": "rgba(0, 108, 228, 1)",
