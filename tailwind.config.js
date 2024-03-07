@@ -7,7 +7,6 @@ export default {
         Poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        // Define custom colors using RGBA
         "blue-start": "rgba(0, 108, 228, 1)",
         "blue-end": "rgba(0, 108, 228, .8)",
         "nav-bg": "rgba(255, 255, 255, 0.9)",

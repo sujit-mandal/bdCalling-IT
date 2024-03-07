@@ -6,8 +6,8 @@ import logo from "../assets/LOGO white.png";
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-blue-start from-80% to-blue-end to-100%">
-      <div className="max-w-screen-xl mx-auto">
-        <div className="flex justify-between text-white py-10 border-b-[2px] border-[#FFFFFF 30%]">
+      <div className="max-w-screen-xl mx-auto px-5 xl:px-0">
+        <div className="flex flex-col justify-between text-white py-10 border-b-[2px] border-[#FFFFFF 30%]">
           <div>
             <h5 className="text-lg font-medium">Address</h5>
             <p className="w-[80%] pt-3">House- 75 Ka, Main Rd, Dhaka 1216</p>
@@ -40,8 +40,8 @@ const Footer = () => {
             <p>info@airbook.com</p>
           </div>
         </div>
-        <div className="py-5 flex items-baseline justify-between">
-          <img src={logo} alt="" />
+        <div className="py-5 flex flex-col items-center space-y-5 xl:space-y-0 xl:flex-row xl:items-baseline xl:justify-between">
+          <img src={logo} alt="" className=""/>
           <p className="text-white font-bold">© Copyright AIRBOOK</p>
           <div className="flex items-center gap-3 text-white text-3xl pr-5">
             <FaFacebookF />

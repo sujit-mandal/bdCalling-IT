@@ -33,15 +33,15 @@ import Testimonial from "./components/Testimonial";
 const Home = () => {
   return (
     <div className="bg-[#E5E5E5] font-Poppins">
-      <div className="bg-hero bg-no-repeat bg-cover bg-center pb-24">
+      <div className="bg-[url('https://i.ibb.co/ZcXNfxj/background.png')] bg-no-repeat bg-cover bg-center pb-24">
         <Navbar />
         <div className="max-w-screen-xl mx-auto">
           <h3 className="text-white text-[40px] font-semibold ml-[52px] mt-12 mb-6">
             Welcome To <span className="text-[#006CE4]">AirBook</span>
           </h3>
-          <div className="bg-white rounded-[10px]">
+          <div className="bg-white rounded-[10px] mx-5 xl:mx-auto">
             <div className="p-12">
-              <div className="flex items-center justify-between">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div className="flex gap-5">
                   <span className="inline-flex items-center bg-gray-200 gap-2 px-2 py-1 rounded-[4px]">
                     <BiRadioCircle className="text-2xl" /> One Way
@@ -59,7 +59,7 @@ const Home = () => {
                   </span>
                 </div>
               </div>
-              <div className="mt-5 flex items-center justify-between gap-1">
+              <div className="mt-5 flex flex-col xl:flex-row xl:items-center xl:justify-between gap-y-3 xl:gap-y-0 xl:gap-1">
                 <div className="flex items-center gap-2 border-[1px] border-gray-200 rounded-lg p-3">
                   <h1 className="font-semibold">DAC</h1>
                   <div className="border-l-[2px] pl-2">
@@ -88,7 +88,7 @@ const Home = () => {
                     <p>Thursday, 2023</p>
                   </div>
                 </div>
-                <div className="bg-[#FFB700] py-[22px] px-7 rounded-lg text-white text-3xl">
+                <div className="bg-[#FFB700] py-[22px] px-7 rounded-lg text-white text-3xl flex flex-col items-end md:items-center">
                   <IoSearchSharp />
                 </div>
               </div>
@@ -97,11 +97,11 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="max-w-screen-xl mx-auto">
+      <div className="max-w-screen-xl mx-auto px-5 xl:px-0">
         <h2 className="pt-14 pb-10 text-3xl font-semibold">
           Featured Destinations
         </h2>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
           <FeatureCard
             image={image1}
             text={"Stopover opportunity in İstanbul with Turkish Airlines"}
@@ -118,10 +118,10 @@ const Home = () => {
           ></FeatureCard>
         </div>
       </div>
-      <div className="">
-        <div className="max-w-screen-xl mx-auto">
+      <>
+        <div className="max-w-screen-xl mx-auto px-5 xl:px-0">
           <h2 className="pt-14 pb-10 text-3xl font-semibold">Deals & Offers</h2>
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
             <DealsCard image={deal1}></DealsCard>
             <DealsCard image={deal2}></DealsCard>
             <DealsCard image={deal3}></DealsCard>
@@ -138,10 +138,10 @@ const Home = () => {
             <VscCircleFilled />
           </span>
         </div>
-      </div>
-      <div className="max-w-screen-xl mx-auto">
+      </>
+      <div className="max-w-screen-xl mx-auto px-5 xl:px-0">
         <h2 className="pt-14 pb-10 text-3xl font-semibold">Popular Airlines</h2>
-        <div className="grid grid-cols-4 gap-x-5 gap-y-10">
+        <div className="grid grid-cols-2 xl:grid-cols-4 gap-x-5 gap-y-10">
           <AirlineCard
             logo={airline1}
             airline={"American Airlines"}
@@ -217,9 +217,9 @@ const Home = () => {
         </div>
       </div>
       <Testimonial/>
-      <div className="max-w-screen-xl mx-auto relative">
+      <div className="max-w-screen-xl mx-auto relative px-5 xl:px-0">
         <h2 className="pt-14 pb-10 text-3xl font-semibold">Travel Blog</h2>
-        <div className="grid grid-cols-3 gap-x-5 gap-y-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-10">
           <BlogCard
             blogImage={blogImage1}
             userIcon={user1}
@@ -247,10 +247,10 @@ const Home = () => {
             date={"10 Septembar 23"}
           />
         </div>
-        <div className="bg-[#FFB700] p-2 rounded-full absolute left-5 top-[40%]">
+        <div className="bg-[#FFB700] hidden md:block p-2 rounded-full absolute md:left-10 md:top-[25%] xl:left-5 xl:top-[40%]">
           <MdKeyboardArrowLeft />
         </div>
-        <div className="bg-[#FFB700] p-2 rounded-full absolute right-5 top-[40%]">
+        <div className="bg-[#FFB700] hidden md:block p-2 rounded-full absolute md:right-10 md:top-[25%] xl:right-5 xl:top-[40%]">
           <MdKeyboardArrowRight />
         </div>
       </div>

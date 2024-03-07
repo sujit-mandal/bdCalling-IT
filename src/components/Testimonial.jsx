@@ -8,12 +8,12 @@ import arrowRight from "../assets/Arrow 1.png";
 const Testimonial = () => {
   return (
     <>
-      <h2 className="pt-24 pb-10 text-3xl max-w-screen-xl mx-auto font-semibold">
+      <h2 className="pt-24 pb-10 text-3xl max-w-screen-xl mx-auto font-semibold px-5 xl:px-0">
         Deals & Offers
       </h2>
       <div className="bg-[#006CE4]">
-        <div className="max-w-screen-xl mx-auto grid grid-cols-6 gap-5 py-14">
-          <div className="relative">
+        <div className="max-w-screen-xl mx-auto grid grid-cols-6 gap-5 py-14 px-5 xl:px-0">
+          <div className="relative hidden xl:block">
             <img src={tesimonialImage3} alt="" className="w-48 h-full" />
             <div className="absolute top-0 left-0 w-full h-full bg-[#006CE4] opacity-50"></div>{" "}
             <img
@@ -22,10 +22,10 @@ const Testimonial = () => {
               className="absolute top-[50%] left-[30%]"
             />
           </div>
-          <div className="flex items-center gap-10 bg-white rounded-[15px] col-span-4">
+          <div className="flex items-center gap-10 bg-white rounded-[15px] col-span-6 xl:col-span-4">
             <img src={tesimonialImage1} alt="" className="w-48 h-full" />
             <div className="p-10">
-              <p className="w-[80%]">
+              <p className="w-full xl:w-[80%]">
                 "Unforgettable journeys with John and Sarah! Their travel
                 expertise turned our dreams into reality. Can't wait to explore
                 with them again!"
@@ -87,7 +87,7 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative hidden xl:block">
             <img src={tesimonialImage2} alt="" className="w-48 h-full" />
             <div className="absolute top-0 left-0 w-full h-full bg-[#006CE4] opacity-50"></div>{" "}
             <img

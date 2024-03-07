@@ -3,7 +3,7 @@ import user1 from "../assets/userIcon1.png";
 
 const BlogCard = ({blogImage, userIcon, userName, date, category, title}) => {
   return (
-    <div className="bg-white rounded-[13px]">
+    <div className="bg-white rounded-3xl xl:rounded-[13px]">
       <img
         src={blogImage}
         alt="Blog Image"
